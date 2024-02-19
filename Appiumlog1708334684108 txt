@@ -1,0 +1,617 @@
+2024-02-19 14:54:45:336 [Appium] Welcome to Appium v2.5.1
+2024-02-19 14:54:45:338 [Appium] Non-default server args:
+2024-02-19 14:54:45:340 [Appium] { address: '127.0.0.1', localTimezone: true }
+2024-02-19 14:54:45:340 [Appium] The autodetected Appium home path: /Users/ankitsharma/.appium
+2024-02-19 14:54:45:340 [Appium] Attempting to load driver uiautomator2...
+2024-02-19 14:54:45:342 [Appium] Requiring driver at /Users/ankitsharma/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2024-02-19 14:54:45:902 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.561s
+2024-02-19 14:54:45:919 [Appium] Appium REST http interface listener started on http://127.0.0.1:4723
+2024-02-19 14:54:45:920 [Appium] Available drivers:
+2024-02-19 14:54:45:920 [Appium]   - uiautomator2@3.0.0 (automationName 'UiAutomator2')
+2024-02-19 14:54:45:920 [Appium] Available plugins:
+2024-02-19 14:54:45:920 [Appium]   - element-wait@3.0.2
+2024-02-19 14:54:45:920 [Appium]   - appium-dashboard@v2.0.3
+2024-02-19 14:54:45:920 [Appium]   - gestures@4.0.1
+2024-02-19 14:54:45:921 [Appium]   - appium-reporter-plugin@1.1.0-beta.06
+2024-02-19 14:54:45:921 [Appium]   - relaxed-caps@1.0.6
+2024-02-19 14:54:45:921 [Appium]   - execute-driver@3.0.25
+2024-02-19 14:54:45:921 [Appium] No plugins activated. Use the --use-plugins flag with names of plugins to activate
+2024-02-19 14:54:46:112 [HTTP] --> GET /status
+2024-02-19 14:54:46:112 [HTTP] {}
+2024-02-19 14:54:46:113 [AppiumDriver@5443] Calling AppiumDriver.getStatus() with args: []
+2024-02-19 14:54:46:114 [AppiumDriver@5443] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.5.1"}}
+2024-02-19 14:54:46:121 [HTTP] <-- GET /status 200 6 ms - 110
+2024-02-19 14:54:46:122 [HTTP] 
+2024-02-19 14:54:46:726 [HTTP] Request idempotency key: 000e2d8b-587f-41f0-be24-e8c15b6ba03f
+2024-02-19 14:54:46:736 [HTTP] --> POST /session
+2024-02-19 14:54:46:736 [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"/Users/ankitsharma/IdeaProjects/appium2.0/src/test/Android-MyDemoAppRN.1.3.0.build-244.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Ankit-device","platformName":"ANDROID"}}}
+2024-02-19 14:54:46:736 [AppiumDriver@5443] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:app":"/Users/ankitsharma/IdeaProjects/appium2.0/src/test/Android-MyDemoAppRN.1.3.0.build-244.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Ankit-device","platformName":"ANDROID"}}]
+2024-02-19 14:54:46:736 [AppiumDriver@5443] Event 'newSessionRequested' logged at 1708334686736 (14:54:46 GMT+0530 (India Standard Time))
+2024-02-19 14:54:46:739 [Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+2024-02-19 14:54:46:739 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2024-02-19 14:54:46:739 [Appium] Will require it at /Users/ankitsharma/.appium/node_modules/appium-uiautomator2-driver
+2024-02-19 14:54:46:740 [Appium] Requiring driver at /Users/ankitsharma/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2024-02-19 14:54:46:741 [AppiumDriver@5443] Appium v2.5.1 creating new AndroidUiautomator2Driver (v3.0.0) session
+2024-02-19 14:54:46:741 [AppiumDriver@5443] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2024-02-19 14:54:46:741 [AppiumDriver@5443] Appium's BaseDriver version is 9.5.2
+2024-02-19 14:54:46:741 [AppiumDriver@5443] AndroidUiautomator2Driver's BaseDriver version is 9.5.2
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8] Creating session with W3C capabilities: {
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]   "alwaysMatch": {
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]     "platformName": "ANDROID",
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]     "appium:app": "/Users/ankitsharma/IdeaProjects/appium2.0/src/test/Android-MyDemoAppRN.1.3.0.build-244.apk",
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]     "appium:automationName": "UIAutomator2",
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]     "appium:deviceName": "Ankit-device"
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]   },
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]   "firstMatch": [
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]     {}
+2024-02-19 14:54:46:745 [AndroidUiautomator2Driver@22d8]   ]
+2024-02-19 14:54:46:746 [AndroidUiautomator2Driver@22d8] }
+2024-02-19 14:54:46:750 [AndroidUiautomator2Driver@22d8 (ab9df973)] Session created with session id: ab9df973-6fdf-4af4-b4e5-ee557e02dd31
+2024-02-19 14:54:46:758 [ADB] Found 1 'build-tools' folders under '/Users/ankitsharma/Library/Android/sdk' (newest first):
+2024-02-19 14:54:46:758 [ADB]     /Users/ankitsharma/Library/Android/sdk/build-tools/34.0.0
+2024-02-19 14:54:46:758 [ADB] Using 'adb' from '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb'
+2024-02-19 14:54:46:759 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2024-02-19 14:54:46:862 [AndroidUiautomator2Driver@22d8 (ab9df973)] Retrieving device list
+2024-02-19 14:54:46:862 [ADB] Trying to find connected Android devices
+2024-02-19 14:54:46:863 [ADB] Getting connected devices
+2024-02-19 14:54:46:880 [ADB] No connected devices have been detected
+2024-02-19 14:54:46:880 [ADB] Could not find online devices
+2024-02-19 14:54:46:880 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:46:880 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:47:096 [ADB] Getting connected devices
+2024-02-19 14:54:47:110 [ADB] No connected devices have been detected
+2024-02-19 14:54:47:110 [ADB] Could not find online devices
+2024-02-19 14:54:47:110 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:47:111 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:47:327 [ADB] Getting connected devices
+2024-02-19 14:54:47:347 [ADB] No connected devices have been detected
+2024-02-19 14:54:47:347 [ADB] Could not find online devices
+2024-02-19 14:54:47:347 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:47:348 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:47:564 [ADB] Getting connected devices
+2024-02-19 14:54:47:580 [ADB] No connected devices have been detected
+2024-02-19 14:54:47:581 [ADB] Could not find online devices
+2024-02-19 14:54:47:581 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:47:581 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:47:795 [ADB] Getting connected devices
+2024-02-19 14:54:47:811 [ADB] No connected devices have been detected
+2024-02-19 14:54:47:811 [ADB] Could not find online devices
+2024-02-19 14:54:47:811 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:47:811 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:48:026 [ADB] Getting connected devices
+2024-02-19 14:54:48:041 [ADB] No connected devices have been detected
+2024-02-19 14:54:48:041 [ADB] Could not find online devices
+2024-02-19 14:54:48:041 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:48:042 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:48:258 [ADB] Getting connected devices
+2024-02-19 14:54:48:275 [ADB] No connected devices have been detected
+2024-02-19 14:54:48:276 [ADB] Could not find online devices
+2024-02-19 14:54:48:276 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:48:276 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:48:492 [ADB] Getting connected devices
+2024-02-19 14:54:48:507 [ADB] No connected devices have been detected
+2024-02-19 14:54:48:507 [ADB] Could not find online devices
+2024-02-19 14:54:48:508 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:48:508 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:48:723 [ADB] Getting connected devices
+2024-02-19 14:54:48:741 [ADB] No connected devices have been detected
+2024-02-19 14:54:48:741 [ADB] Could not find online devices
+2024-02-19 14:54:48:741 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:48:741 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:48:957 [ADB] Getting connected devices
+2024-02-19 14:54:48:973 [ADB] No connected devices have been detected
+2024-02-19 14:54:48:973 [ADB] Could not find online devices
+2024-02-19 14:54:48:973 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:48:973 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:49:188 [ADB] Getting connected devices
+2024-02-19 14:54:49:203 [ADB] No connected devices have been detected
+2024-02-19 14:54:49:203 [ADB] Could not find online devices
+2024-02-19 14:54:49:203 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:49:203 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:49:419 [ADB] Getting connected devices
+2024-02-19 14:54:49:435 [ADB] No connected devices have been detected
+2024-02-19 14:54:49:435 [ADB] Could not find online devices
+2024-02-19 14:54:49:435 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:49:435 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:49:651 [ADB] Getting connected devices
+2024-02-19 14:54:49:668 [ADB] No connected devices have been detected
+2024-02-19 14:54:49:668 [ADB] Could not find online devices
+2024-02-19 14:54:49:668 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:49:668 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:49:883 [ADB] Getting connected devices
+2024-02-19 14:54:49:904 [ADB] No connected devices have been detected
+2024-02-19 14:54:49:905 [ADB] Could not find online devices
+2024-02-19 14:54:49:905 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:49:905 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:50:121 [ADB] Getting connected devices
+2024-02-19 14:54:50:135 [ADB] No connected devices have been detected
+2024-02-19 14:54:50:135 [ADB] Could not find online devices
+2024-02-19 14:54:50:135 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:50:135 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:50:349 [ADB] Getting connected devices
+2024-02-19 14:54:50:365 [ADB] No connected devices have been detected
+2024-02-19 14:54:50:365 [ADB] Could not find online devices
+2024-02-19 14:54:50:366 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:50:366 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:50:581 [ADB] Getting connected devices
+2024-02-19 14:54:50:603 [ADB] No connected devices have been detected
+2024-02-19 14:54:50:603 [ADB] Could not find online devices
+2024-02-19 14:54:50:603 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:50:603 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:50:819 [ADB] Getting connected devices
+2024-02-19 14:54:50:840 [ADB] No connected devices have been detected
+2024-02-19 14:54:50:841 [ADB] Could not find online devices
+2024-02-19 14:54:50:841 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:50:841 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:51:061 [ADB] Getting connected devices
+2024-02-19 14:54:51:089 [ADB] No connected devices have been detected
+2024-02-19 14:54:51:089 [ADB] Could not find online devices
+2024-02-19 14:54:51:090 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:51:090 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:51:321 [ADB] Getting connected devices
+2024-02-19 14:54:51:346 [ADB] No connected devices have been detected
+2024-02-19 14:54:51:346 [ADB] Could not find online devices
+2024-02-19 14:54:51:347 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:51:347 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:51:573 [ADB] Getting connected devices
+2024-02-19 14:54:51:588 [ADB] No connected devices have been detected
+2024-02-19 14:54:51:588 [ADB] Could not find online devices
+2024-02-19 14:54:51:588 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:51:589 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:51:805 [ADB] Getting connected devices
+2024-02-19 14:54:51:822 [ADB] No connected devices have been detected
+2024-02-19 14:54:51:822 [ADB] Could not find online devices
+2024-02-19 14:54:51:822 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:51:822 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:52:037 [ADB] Getting connected devices
+2024-02-19 14:54:52:060 [ADB] No connected devices have been detected
+2024-02-19 14:54:52:060 [ADB] Could not find online devices
+2024-02-19 14:54:52:060 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:52:060 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:52:279 [ADB] Getting connected devices
+2024-02-19 14:54:52:303 [ADB] No connected devices have been detected
+2024-02-19 14:54:52:303 [ADB] Could not find online devices
+2024-02-19 14:54:52:303 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:52:303 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:52:522 [ADB] Getting connected devices
+2024-02-19 14:54:52:536 [ADB] No connected devices have been detected
+2024-02-19 14:54:52:536 [ADB] Could not find online devices
+2024-02-19 14:54:52:536 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:52:536 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:52:751 [ADB] Getting connected devices
+2024-02-19 14:54:52:772 [ADB] No connected devices have been detected
+2024-02-19 14:54:52:772 [ADB] Could not find online devices
+2024-02-19 14:54:52:772 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:52:772 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:52:988 [ADB] Getting connected devices
+2024-02-19 14:54:53:002 [ADB] No connected devices have been detected
+2024-02-19 14:54:53:002 [ADB] Could not find online devices
+2024-02-19 14:54:53:003 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:53:003 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:53:216 [ADB] Getting connected devices
+2024-02-19 14:54:53:232 [ADB] No connected devices have been detected
+2024-02-19 14:54:53:232 [ADB] Could not find online devices
+2024-02-19 14:54:53:232 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:53:232 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:53:448 [ADB] Getting connected devices
+2024-02-19 14:54:53:462 [ADB] No connected devices have been detected
+2024-02-19 14:54:53:462 [ADB] Could not find online devices
+2024-02-19 14:54:53:462 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:53:462 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:53:678 [ADB] Getting connected devices
+2024-02-19 14:54:53:699 [ADB] No connected devices have been detected
+2024-02-19 14:54:53:699 [ADB] Could not find online devices
+2024-02-19 14:54:53:699 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:53:699 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:53:915 [ADB] Getting connected devices
+2024-02-19 14:54:53:932 [ADB] No connected devices have been detected
+2024-02-19 14:54:53:932 [ADB] Could not find online devices
+2024-02-19 14:54:53:932 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:53:932 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:54:151 [ADB] Getting connected devices
+2024-02-19 14:54:54:169 [ADB] No connected devices have been detected
+2024-02-19 14:54:54:169 [ADB] Could not find online devices
+2024-02-19 14:54:54:169 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:54:169 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:54:384 [ADB] Getting connected devices
+2024-02-19 14:54:54:399 [ADB] No connected devices have been detected
+2024-02-19 14:54:54:399 [ADB] Could not find online devices
+2024-02-19 14:54:54:399 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:54:399 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:54:614 [ADB] Getting connected devices
+2024-02-19 14:54:54:629 [ADB] No connected devices have been detected
+2024-02-19 14:54:54:629 [ADB] Could not find online devices
+2024-02-19 14:54:54:629 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:54:629 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:54:844 [ADB] Getting connected devices
+2024-02-19 14:54:54:859 [ADB] No connected devices have been detected
+2024-02-19 14:54:54:859 [ADB] Could not find online devices
+2024-02-19 14:54:54:859 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:54:859 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:55:074 [ADB] Getting connected devices
+2024-02-19 14:54:55:090 [ADB] No connected devices have been detected
+2024-02-19 14:54:55:090 [ADB] Could not find online devices
+2024-02-19 14:54:55:090 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:55:090 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:55:304 [ADB] Getting connected devices
+2024-02-19 14:54:55:319 [ADB] No connected devices have been detected
+2024-02-19 14:54:55:319 [ADB] Could not find online devices
+2024-02-19 14:54:55:319 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:55:319 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:55:533 [ADB] Getting connected devices
+2024-02-19 14:54:55:549 [ADB] No connected devices have been detected
+2024-02-19 14:54:55:549 [ADB] Could not find online devices
+2024-02-19 14:54:55:549 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:55:549 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:55:764 [ADB] Getting connected devices
+2024-02-19 14:54:55:785 [ADB] No connected devices have been detected
+2024-02-19 14:54:55:785 [ADB] Could not find online devices
+2024-02-19 14:54:55:785 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:55:785 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:56:002 [ADB] Getting connected devices
+2024-02-19 14:54:56:023 [ADB] No connected devices have been detected
+2024-02-19 14:54:56:023 [ADB] Could not find online devices
+2024-02-19 14:54:56:023 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:56:023 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:56:240 [ADB] Getting connected devices
+2024-02-19 14:54:56:258 [ADB] No connected devices have been detected
+2024-02-19 14:54:56:259 [ADB] Could not find online devices
+2024-02-19 14:54:56:259 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:56:259 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:56:474 [ADB] Getting connected devices
+2024-02-19 14:54:56:494 [ADB] No connected devices have been detected
+2024-02-19 14:54:56:494 [ADB] Could not find online devices
+2024-02-19 14:54:56:494 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:56:494 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:56:710 [ADB] Getting connected devices
+2024-02-19 14:54:56:742 [ADB] No connected devices have been detected
+2024-02-19 14:54:56:742 [ADB] Could not find online devices
+2024-02-19 14:54:56:742 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:56:742 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:56:962 [ADB] Getting connected devices
+2024-02-19 14:54:56:983 [ADB] No connected devices have been detected
+2024-02-19 14:54:56:983 [ADB] Could not find online devices
+2024-02-19 14:54:56:983 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:56:984 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:57:204 [ADB] Getting connected devices
+2024-02-19 14:54:57:225 [ADB] No connected devices have been detected
+2024-02-19 14:54:57:225 [ADB] Could not find online devices
+2024-02-19 14:54:57:225 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:57:225 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:57:444 [ADB] Getting connected devices
+2024-02-19 14:54:57:460 [ADB] No connected devices have been detected
+2024-02-19 14:54:57:460 [ADB] Could not find online devices
+2024-02-19 14:54:57:460 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:57:460 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:57:676 [ADB] Getting connected devices
+2024-02-19 14:54:57:692 [ADB] No connected devices have been detected
+2024-02-19 14:54:57:692 [ADB] Could not find online devices
+2024-02-19 14:54:57:692 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:57:692 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:57:908 [ADB] Getting connected devices
+2024-02-19 14:54:57:922 [ADB] No connected devices have been detected
+2024-02-19 14:54:57:923 [ADB] Could not find online devices
+2024-02-19 14:54:57:923 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:57:923 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:58:137 [ADB] Getting connected devices
+2024-02-19 14:54:58:152 [ADB] No connected devices have been detected
+2024-02-19 14:54:58:152 [ADB] Could not find online devices
+2024-02-19 14:54:58:152 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:58:152 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:58:368 [ADB] Getting connected devices
+2024-02-19 14:54:58:382 [ADB] No connected devices have been detected
+2024-02-19 14:54:58:382 [ADB] Could not find online devices
+2024-02-19 14:54:58:382 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:58:382 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:58:598 [ADB] Getting connected devices
+2024-02-19 14:54:58:612 [ADB] No connected devices have been detected
+2024-02-19 14:54:58:612 [ADB] Could not find online devices
+2024-02-19 14:54:58:612 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:58:612 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:58:827 [ADB] Getting connected devices
+2024-02-19 14:54:58:842 [ADB] No connected devices have been detected
+2024-02-19 14:54:58:843 [ADB] Could not find online devices
+2024-02-19 14:54:58:843 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:58:843 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:59:059 [ADB] Getting connected devices
+2024-02-19 14:54:59:076 [ADB] No connected devices have been detected
+2024-02-19 14:54:59:076 [ADB] Could not find online devices
+2024-02-19 14:54:59:076 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:59:076 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:59:291 [ADB] Getting connected devices
+2024-02-19 14:54:59:307 [ADB] No connected devices have been detected
+2024-02-19 14:54:59:308 [ADB] Could not find online devices
+2024-02-19 14:54:59:308 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:59:308 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:59:523 [ADB] Getting connected devices
+2024-02-19 14:54:59:546 [ADB] No connected devices have been detected
+2024-02-19 14:54:59:546 [ADB] Could not find online devices
+2024-02-19 14:54:59:546 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:59:546 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:59:761 [ADB] Getting connected devices
+2024-02-19 14:54:59:782 [ADB] No connected devices have been detected
+2024-02-19 14:54:59:782 [ADB] Could not find online devices
+2024-02-19 14:54:59:782 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:54:59:783 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:54:59:997 [ADB] Getting connected devices
+2024-02-19 14:55:00:021 [ADB] No connected devices have been detected
+2024-02-19 14:55:00:021 [ADB] Could not find online devices
+2024-02-19 14:55:00:021 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:00:021 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:00:237 [ADB] Getting connected devices
+2024-02-19 14:55:00:255 [ADB] No connected devices have been detected
+2024-02-19 14:55:00:255 [ADB] Could not find online devices
+2024-02-19 14:55:00:255 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:00:255 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:00:473 [ADB] Getting connected devices
+2024-02-19 14:55:00:492 [ADB] No connected devices have been detected
+2024-02-19 14:55:00:492 [ADB] Could not find online devices
+2024-02-19 14:55:00:492 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:00:492 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:00:710 [ADB] Getting connected devices
+2024-02-19 14:55:00:734 [ADB] No connected devices have been detected
+2024-02-19 14:55:00:734 [ADB] Could not find online devices
+2024-02-19 14:55:00:734 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:00:734 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:00:954 [ADB] Getting connected devices
+2024-02-19 14:55:00:982 [ADB] No connected devices have been detected
+2024-02-19 14:55:00:982 [ADB] Could not find online devices
+2024-02-19 14:55:00:982 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:00:982 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:01:200 [ADB] Getting connected devices
+2024-02-19 14:55:01:218 [ADB] No connected devices have been detected
+2024-02-19 14:55:01:218 [ADB] Could not find online devices
+2024-02-19 14:55:01:218 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:01:218 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:01:436 [ADB] Getting connected devices
+2024-02-19 14:55:01:451 [ADB] No connected devices have been detected
+2024-02-19 14:55:01:451 [ADB] Could not find online devices
+2024-02-19 14:55:01:451 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:01:451 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:01:666 [ADB] Getting connected devices
+2024-02-19 14:55:01:683 [ADB] No connected devices have been detected
+2024-02-19 14:55:01:683 [ADB] Could not find online devices
+2024-02-19 14:55:01:683 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:01:685 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:01:901 [ADB] Getting connected devices
+2024-02-19 14:55:01:916 [ADB] No connected devices have been detected
+2024-02-19 14:55:01:916 [ADB] Could not find online devices
+2024-02-19 14:55:01:916 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:01:917 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:02:132 [ADB] Getting connected devices
+2024-02-19 14:55:02:148 [ADB] No connected devices have been detected
+2024-02-19 14:55:02:148 [ADB] Could not find online devices
+2024-02-19 14:55:02:148 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:02:148 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:02:365 [ADB] Getting connected devices
+2024-02-19 14:55:02:380 [ADB] No connected devices have been detected
+2024-02-19 14:55:02:380 [ADB] Could not find online devices
+2024-02-19 14:55:02:381 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:02:381 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:02:596 [ADB] Getting connected devices
+2024-02-19 14:55:02:625 [ADB] No connected devices have been detected
+2024-02-19 14:55:02:626 [ADB] Could not find online devices
+2024-02-19 14:55:02:626 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:02:626 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:02:841 [ADB] Getting connected devices
+2024-02-19 14:55:02:856 [ADB] No connected devices have been detected
+2024-02-19 14:55:02:856 [ADB] Could not find online devices
+2024-02-19 14:55:02:856 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:02:856 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:03:071 [ADB] Getting connected devices
+2024-02-19 14:55:03:086 [ADB] No connected devices have been detected
+2024-02-19 14:55:03:086 [ADB] Could not find online devices
+2024-02-19 14:55:03:086 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:03:086 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:03:302 [ADB] Getting connected devices
+2024-02-19 14:55:03:324 [ADB] No connected devices have been detected
+2024-02-19 14:55:03:324 [ADB] Could not find online devices
+2024-02-19 14:55:03:324 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:03:324 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:03:543 [ADB] Getting connected devices
+2024-02-19 14:55:03:561 [ADB] No connected devices have been detected
+2024-02-19 14:55:03:561 [ADB] Could not find online devices
+2024-02-19 14:55:03:561 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:03:561 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:03:776 [ADB] Getting connected devices
+2024-02-19 14:55:03:800 [ADB] No connected devices have been detected
+2024-02-19 14:55:03:800 [ADB] Could not find online devices
+2024-02-19 14:55:03:800 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:03:800 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:04:020 [ADB] Getting connected devices
+2024-02-19 14:55:04:047 [ADB] No connected devices have been detected
+2024-02-19 14:55:04:047 [ADB] Could not find online devices
+2024-02-19 14:55:04:047 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:04:047 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:04:263 [ADB] Getting connected devices
+2024-02-19 14:55:04:285 [ADB] No connected devices have been detected
+2024-02-19 14:55:04:285 [ADB] Could not find online devices
+2024-02-19 14:55:04:285 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:04:285 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:04:517 [ADB] Getting connected devices
+2024-02-19 14:55:04:534 [ADB] No connected devices have been detected
+2024-02-19 14:55:04:534 [ADB] Could not find online devices
+2024-02-19 14:55:04:534 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:04:534 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:04:750 [ADB] Getting connected devices
+2024-02-19 14:55:04:773 [ADB] No connected devices have been detected
+2024-02-19 14:55:04:773 [ADB] Could not find online devices
+2024-02-19 14:55:04:774 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:04:774 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:04:990 [ADB] Getting connected devices
+2024-02-19 14:55:05:019 [ADB] No connected devices have been detected
+2024-02-19 14:55:05:019 [ADB] Could not find online devices
+2024-02-19 14:55:05:019 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:05:020 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:05:235 [ADB] Getting connected devices
+2024-02-19 14:55:05:258 [ADB] No connected devices have been detected
+2024-02-19 14:55:05:258 [ADB] Could not find online devices
+2024-02-19 14:55:05:258 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:05:258 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:05:475 [ADB] Getting connected devices
+2024-02-19 14:55:05:489 [ADB] No connected devices have been detected
+2024-02-19 14:55:05:490 [ADB] Could not find online devices
+2024-02-19 14:55:05:490 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:05:490 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:05:705 [ADB] Getting connected devices
+2024-02-19 14:55:05:720 [ADB] No connected devices have been detected
+2024-02-19 14:55:05:720 [ADB] Could not find online devices
+2024-02-19 14:55:05:720 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:05:720 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:05:935 [ADB] Getting connected devices
+2024-02-19 14:55:05:962 [ADB] No connected devices have been detected
+2024-02-19 14:55:05:962 [ADB] Could not find online devices
+2024-02-19 14:55:05:962 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:05:962 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:06:179 [ADB] Getting connected devices
+2024-02-19 14:55:06:198 [ADB] No connected devices have been detected
+2024-02-19 14:55:06:198 [ADB] Could not find online devices
+2024-02-19 14:55:06:198 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:06:198 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:06:416 [ADB] Getting connected devices
+2024-02-19 14:55:06:436 [ADB] No connected devices have been detected
+2024-02-19 14:55:06:436 [ADB] Could not find online devices
+2024-02-19 14:55:06:436 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:06:436 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:06:655 [ADB] Getting connected devices
+2024-02-19 14:55:06:676 [ADB] No connected devices have been detected
+2024-02-19 14:55:06:676 [ADB] Could not find online devices
+2024-02-19 14:55:06:676 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:06:676 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:06:864 [ADB] Getting connected devices
+2024-02-19 14:55:06:887 [ADB] No connected devices have been detected
+2024-02-19 14:55:06:887 [ADB] Could not find online devices
+2024-02-19 14:55:06:887 [ADB] Reconnecting adb (target offline)
+2024-02-19 14:55:06:887 [ADB] Running '/Users/ankitsharma/Library/Android/sdk/platform-tools/adb -P 5037 reconnect offline'
+2024-02-19 14:55:06:914 [AndroidUiautomator2Driver@22d8 (ab9df973)] Deleting UiAutomator2 session
+2024-02-19 14:55:06:915 [AndroidUiautomator2Driver@22d8 (ab9df973)] Unable to stop ChromeDriver proxies: Cannot read properties of undefined (reading 'proxyReqRes')
+2024-02-19 14:55:06:917 [AppiumDriver@5443] Event 'newSessionStarted' logged at 1708334706917 (14:55:06 GMT+0530 (India Standard Time))
+2024-02-19 14:55:06:959 [AppiumDriver@5443] Encountered internal error running command: Error: Could not find a connected Android device in 20000ms
+2024-02-19 14:55:06:959 [AppiumDriver@5443]     at ADB.getDevicesWithRetry (/Users/ankitsharma/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/lib/tools/system-calls.js:332:13)
+2024-02-19 14:55:06:959 [AppiumDriver@5443]     at AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/ankitsharma/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/device/common.js:35:21)
+2024-02-19 14:55:06:959 [AppiumDriver@5443]     at AndroidUiautomator2Driver.createSession (/Users/ankitsharma/.appium/node_modules/appium-uiautomator2-driver/lib/driver.ts:363:30)
+2024-02-19 14:55:06:959 [AppiumDriver@5443]     at AppiumDriver.createSession (/usr/local/lib/node_modules/appium/lib/appium.js:717:35)
+2024-02-19 14:55:06:974 [HTTP] <-- POST /session 500 20237 ms - 604
+2024-02-19 14:55:06:974 [HTTP] 
+2024-02-19 14:55:07:120 [Appium] Received SIGTERM - shutting down
+2024-02-19 14:55:07:122 [AppiumDriver@5443] There are no active sessions for cleanup
+2024-02-19 14:55:07:151 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-02-19 14:55:07:154 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-02-19 14:55:07:156 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-02-19 14:55:07:158 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-02-19 14:55:07:160 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:930:11)
+    at Socket._write (node:net:942:8)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)

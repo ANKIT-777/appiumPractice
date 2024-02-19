@@ -5,11 +5,16 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class TestAndroidFirst {
-    UiAutomator2Options option = new UiAutomator2Options();
+    UiAutomator2Options option = new UiAutomator2Options();;
+    @BeforeTest
+    public void setupFix() throws IOException {
+        serverSetup.start();
+    }
 
     @Test
     void androidSetup() throws MalformedURLException, InterruptedException {
@@ -20,6 +25,11 @@ public class TestAndroidFirst {
         URL url = new URL("http://127.0.0.1:4723/");
         AndroidDriver androidDriver = new AndroidDriver(url,option);
         Thread.sleep(2000);
+    }
+
+    @AfterTest
+    public  static  void closeServer() throws IOException {
+        serverSetup.stop();
     }
 
 
